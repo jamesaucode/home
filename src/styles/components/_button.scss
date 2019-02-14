@@ -1,0 +1,16 @@
+.button {
+    &--more-posts {
+        background-color: #9900ff;
+        border-radius: 5px;
+        box-shadow: 3px 3px 3px 0 rgba($color-black,0.15);
+        border: 0;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin: $small-gutter auto;
+
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 2px 5px 5px 0 rgba($color-black,0.2);
+        }
+    }
+}

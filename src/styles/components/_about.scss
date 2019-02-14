@@ -1,0 +1,99 @@
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template: ". main main ." ". main main ." ". main main .";
+  background-color: #f0efef;
+  margin: 4rem 4rem 2rem 8rem;
+  max-width: 100rem;
+  margin: 4rem auto;
+  max-height: fit-content;
+  border-radius: 3px;
+}
+
+.about--main {
+  grid-area: main;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}
+.about--main__heading {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-top: 4rem;
+}
+.about--main__paragraph {
+  text-align: center;
+  margin: 4rem auto 2rem auto;
+  font-family: "Roboto";
+  color: #4d4d4d;
+  height: fit-content;
+  overflow: auto;
+  width: 90%;
+}
+
+@media screen and (max-width: 688px) {
+  .about-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template: ". main main ." ". main main ." ". main main .";
+    background-color: #f0efef;
+    max-width: 100%;
+    margin: 4rem 2rem;
+    height: fit-content;
+    border-radius: 3px;
+  }
+}
+
+.fa-facebook-square,
+.fa-twitter,
+.fa-github {
+  font-size: 2rem;
+  color: #4b4b4b;
+  padding: 0;
+  margin: 0;
+}
+
+.button--portfolio {
+  background-color: #9900ff;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.15);
+  border: 0;
+  padding: 1rem 3rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-family: "Roboto";
+  text-decoration: none;
+  transition: 0.5s ease-out;
+}
+.button--portfolio:hover {
+  transform: translateY(-3px);
+  box-shadow: 2px 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.button-container {
+  display: flex;
+  width: 50%;
+  height: fit-content;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.button--social-media {
+  border-radius: 5px;
+  border: 0;
+  background-color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
+  margin: 2rem 2rem;
+  transition: 0.5s ease-out;
+}
+.button--social-media:hover {
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.15);
+  background-color: #eeeeee;
+}

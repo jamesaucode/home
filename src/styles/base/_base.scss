@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  font-weight: 300;
+  line-height: $default-line-height;
+  background-color: rgb(240, 239, 239);
+}
+
+body {
+  font-size: $default-font;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
